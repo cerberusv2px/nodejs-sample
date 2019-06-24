@@ -5,7 +5,7 @@
 
 const dbConst = require('../constants');
 
-exports.up = function(knex, Promise) {
+exports.up = function(knex) {
   return knex.schema.createTable(dbConst.table_name.TBL_AUTHORS, table => {
     table.increments(dbConst.author_column.ID);
     table.string(dbConst.author_column.FIRST_NAME).notNull();
@@ -25,6 +25,6 @@ exports.up = function(knex, Promise) {
  * @param  {object} knex
  * @return {Promise}
  */
-exports.down = function(knex, Promise) {
+exports.down = function(knex) {
   return knex.schema.dropTable(dbConst.table_name.TBL_AUTHORS);
 };

@@ -1,5 +1,5 @@
 // import { Router } from 'express';
-import { authorController } from './api/controllers';
+import { authorController, bookController } from './api/controllers';
 const Router = require('express');
 // const authorController = require('./api/controllers');
 
@@ -10,5 +10,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.use('/author', authorController);
+router.use('/books', bookController);
 
 module.exports = router;

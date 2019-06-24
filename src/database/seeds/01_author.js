@@ -15,6 +15,7 @@ exports.seed = function(knex, Promise) {
       return Promise.all([
         knex(dbConst.table_name.TBL_AUTHORS).insert([
           {
+            id: 2,
             first_name: 'Legion',
             last_name: 'Commander',
             address: 'Radiant',
@@ -22,6 +23,7 @@ exports.seed = function(knex, Promise) {
             email: 'legion@dota.com'
           },
           {
+            id: 3,
             first_name: 'Anti',
             last_name: 'Mage',
             address: 'Dire',
@@ -29,6 +31,7 @@ exports.seed = function(knex, Promise) {
             email: 'am@dota.com'
           },
           {
+            id: 4,
             first_name: 'In',
             last_name: 'Voker',
             address: 'Dire',
@@ -36,6 +39,7 @@ exports.seed = function(knex, Promise) {
             email: 'joker@dota.com'
           },
           {
+            id: 5,
             first_name: 'Dragon',
             last_name: 'Knight',
             address: 'Radiant',
