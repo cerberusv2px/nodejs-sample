@@ -2,7 +2,7 @@
  * @param  {object} knex
  * @return {Promise}
  */
-exports.up =  function(knex) {
+exports.up = function(knex) {
   return knex.schema.createTable('table_name', table => {
     table.increments();
     table

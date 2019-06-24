@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { authorService } from '../services';
 import HttpStatus from 'http-status-codes';
-import { findAuthor, authorValidator } from '../validators/user.validator';
+import { findAuthor, authorValidator } from '../validators/author.validator';
 
 let router = Router();
 
