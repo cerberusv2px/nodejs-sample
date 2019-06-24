@@ -21,3 +21,7 @@ Example,
 
     $ yarn make:migration create_tags_table
     $ yarn make:seeder 02_insert_tags
+
+## Reference
+
+Reference taken from: https://github.com/mesaugat/express-api-es6-starter
